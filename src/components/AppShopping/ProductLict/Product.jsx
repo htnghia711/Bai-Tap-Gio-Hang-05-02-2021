@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+
 class Product extends Component {
   render() {
     return (
       <div>
         <div className="card">
-          <img className="card-img-top" src="./img/vsphone.jpg" alt />
+          <img className="card-img-top" src="../../img/VinSmart" alt />
           <div className="card-body">
             <h4 className="card-title">VinSmart Live</h4>
             <button className="btn btn-success">Chi tiết</button>

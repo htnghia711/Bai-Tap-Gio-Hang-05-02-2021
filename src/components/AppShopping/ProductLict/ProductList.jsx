@@ -10,12 +10,7 @@ class ProductList extends Component {
             <div className="col-sm-4">
               <Product />
             </div>
-            <div className="col-sm-4">
-              <Product />
-            </div>
-            <div className="col-sm-4">
-              <Product />
-            </div>
+           
           </div>
         </div>
         <div
