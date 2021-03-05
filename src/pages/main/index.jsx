@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AppShopping from "../../components/AppShopping/AppShopping";
-import { getProduct } from "../../Store/product";
-
+import { getProduct } from "../../services/product";
+import { connect } from "react-redux";
 class Home extends Component {
   render() {
     return (
@@ -14,10 +14,12 @@ class Home extends Component {
     getProduct
       .getAxios()
       .then((res) => {
-        console.log(res.data);
+       this.props.dispatch({
+        
+       })
       })
       .catch((err) => {});
   }
 }
 
-export default Home;
+export default connect()(Home);

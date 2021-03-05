@@ -1,13 +1,8 @@
-import axios from "axios";
+import { createStore } from "redux";
+import rootReducer from "../store/reducers/root.reducer";
+const store = createStore(
+  rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
-class GetProduct {
-  getAxios(data) {
-    return axios({
-      method: "GET",
-      url: "https://6038ad714e3a9b0017e93ac7.mockapi.io//Bai-Tap-Gio-Hang",
-      data,
-    });
-  }
-}
-
-export default GetProduct;
+export default store;
